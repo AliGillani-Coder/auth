@@ -1,0 +1,6 @@
+<h1>Index Page</h1>
+<% if user_signed_in? %>
+<%= link_to "Sign Out" ,destroy_user_session_path , method: :delete ,class:'btn btn-lg btn-secondary'%>
+<% else %>
+<%= link_to "Sign In" ,new_user_session_path ,class:'btn btn-lg btn-secondary'%>
+<% end %>
